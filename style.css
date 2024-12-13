@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-image: url("https://i.ibb.co/qNv7NxZ/pc.webp");
+    background-size: cover;
+}
+.container{
+    display: flex;
+    width: 90%;
+  /*  height: 1200px;*/
+    margin: 30px 0px 30px 75px;
+}
+.inputData{
+    width: 25%;
+    background-color: #f6f6f8c7;  
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.currentWeatherImage img{
+    width:250px;
+    height:200px;
+    margin-left: 15%;
+    margin-top: 0px;
+}
+.presentTemp{
+    font-size: 80px;
+    color: black;
+    padding-top: 80px;
+    padding-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.presentDayTime{
+    font-size: 20px;
+    color: black;
+    font-weight: 200;
+    padding-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.preCondition{
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+.prePresp{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+.outputData{
+    width: 75%;
+    background-color: rgba(246,246,248,255);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.searchLocation{
+    display: flex;
+}
+#location{
+    background-color: white;
+    margin: 30px 0px 30px 30px;
+    width: 65%;
+    height: 35px;
+    border-style: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.button{
+    background-color: rgba(85,152,253,255);
+    width: 13%;
+    height: 35px;
+    margin-top: 30px;
+    border-style: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+.chooseOption{
+    display: flex;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+#todayButton{
+    border-style: none;
+    color: silver;
+    font-weight: bold;
+    padding: 5px;
+    background: none;
+    cursor: pointer;
+}
+#weekButton{
+    border-style: none;
+    color: silver;
+    font-weight: bold;
+    padding: 20px 20px 20px 30px;
+    background: none;
+    cursor: pointer;
+}
+.measuringButtons{
+    padding-left: 750px;
+}
+#centigradeButton{
+    width:40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 100%;
+    border-style: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+#farenheitButton{
+    width:40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 100%;
+    border-style: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 17px;
+}
+.weakweatherReports{
+    display: flex;
+    margin: 20px 50px 50px 50px;
+}
+.weakday1{
+    width: 110px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.weakday2{
+    width: 110px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.weakday3{
+    width: 110px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.weakday4{
+    width: 110px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.weakday5{
+    width: 110px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.weakday6{
+    width: 110px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.weakday7{
+    width: 110px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hightlightHeading{
+    padding: 0px 30px 30px 30px;
+    font-family: "Raleway", sans-serif;
+}
+.hightlightsCards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 50px 50px 50px;
+}
+.uvIndexCard{
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.windstatusCard{
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sunriseSunsetCard{
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.humidityCard{
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.visibilityCard{
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.airQualityCard{
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+hr{
+    margin: 20px 20px;
+    border: 0.5px solid white;
+    background-color: white;
+}
+
+.hourlyInfo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 50px 50px 50px;
+}
+.eachHourInfo{
+    width: 110px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.footerContent{
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+.creator{
+    color: purple;
+    text-decoration: underline;
+    
+}
+.active{
+    color:rgba(85,152,253,255);
+}
+.dayName{
+    padding: 10px 12px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+}
+.weathercondIcon{
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
+}
+.weakdayTemp{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.eachHour{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding: 8px;
+    text-align: center;
+}
+.eachConditon{
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
+    text-align: center;
+}
+.eachTemp{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.hightLightCardName{
+    color: #d8dadc;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 20px;
+    padding-top: 15px;
+    font-size: 25px;
+}
+.hightLightValue{
+    color: rgba(102,102,102,255);
+    text-align: center;
+    margin: 25px;
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.hightLightResult{
+    margin-left: 20px;
+    padding-top: 15px;
+    font-size: 15px;
+    color: rgba(102,102,102,255);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.unitActive{
+    color: white !important;
+    background-color: black !important;
+}
+.selected{
+    color: blue;
+}
+.hideTemp{
+    display: none;
+}
+.urlLocationDetails{
+    color: rgb(79, 78, 78);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 5px;
+}

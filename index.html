@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Heebo:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Heebo:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputData">
+            <div>
+                <div class="searchLocation">
+                    <input type="text" placeholder="  Enter Location" id="location">
+                    <button class="button" id="searchButton"></button>
+                </div>
+                <div class="currentWeatherImage" id="currentWeatherImage">
+                    <img src="" alt="" id="currentWeatherImage">
+                </div>
+                <div class="presentInfo">
+                    <div class="presentTemp" id="presentTemp">
+                        <p></p>
+                    </div>
+                    <div class="presentDayTime" id="presentDayTime">
+                        <p></p>
+                    </div>
+                    <hr>
+                    <div class="otherInfo">
+                        <div class="preCondition" id="preCondition">
+                            <p></p>
+                        </div>
+                        <div class="prePresp" id="prePresp">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="urlLocationDetails"></p>
+            </div>
+        </div>
+        <div class="outputData">
+            <div class="chooseOption">
+                <button id="todayButton" class="active">Today</button>
+                <button id="weekButton" class="active">Week</button>
+                <div class="measuringButtons">
+                    <button id="centigradeButton" class="unitActive">°C</button>
+                    <button id="farenheitButton" class="unitActive">°F</button>
+                </div>
+            </div>
+            <div class="Hours">
+                <div class="hourlyInfo" id="hourlyInfo">
+
+                    <div class="eachHourInfo" id="eachhourInfo0">
+                        <div class="eachHour" id="eachHour0"></div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon0">
+                        <div class="eachTemp temperature" id="eachTemp0"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo1">
+                        <div class="eachHour" id="eachHour1"></div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon1">
+                        <div class="eachTemp temperature" id="eachTemp1"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo2">
+                        <div class="eachHour" id="eachHour2"></div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon2">
+                        <div class="eachTemp temperature" id="eachTemp2"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo3">
+                        <div class="eachHour" id="eachHour3"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon3">
+                        <div class="eachTemp temperature" id="eachTemp3"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo4">
+                        <div class="eachHour" id="eachHour4"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon4">
+                        <div class="eachTemp temperature" id="eachTemp4"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo5">
+                        <div class="eachHour" id="eachHour5"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon5">
+                        <div class="eachTemp temperature" id="eachTemp5"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo6">
+                        <div class="eachHour" id="eachHour6"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon6">
+                        <div class="eachTemp temperature" id="eachTemp6"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo7">
+                        <div class="eachHour" id="eachHour7"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon7">
+                        <div class="eachTemp temperature" id="eachTemp7"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo8">
+                        <div class="eachHour" id="eachHour8"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon8">
+                        <div class="eachTemp temperature" id="eachTemp8"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo9">
+                        <div class="eachHour" id="eachHour9"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon9">
+                        <div class="eachTemp temperature" id="eachTemp9"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo10">
+                        <div class="eachHour" id="eachHour10"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon10">
+                        <div class="eachTemp temperature" id="eachTemp10"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo11">
+                        <div class="eachHour" id="eachHour11"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon11">
+                        <div class="eachTemp temperature" id="eachTemp11"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo12">
+                        <div class="eachHour" id="eachHour12"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon12">
+                        <div class="eachTemp temperature" id="eachTemp12"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo13">
+                        <div class="eachHour" id="eachHour13"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon13">
+                        <div class="eachTemp temperature" id="eachTemp13"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo14">
+                        <div class="eachHour" id="eachHour14"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon14">
+                        <div class="eachTemp temperature" id="eachTemp14"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo15">
+                        <div class="eachHour" id="eachHour15"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon15">
+                        <div class="eachTemp temperature" id="eachTemp15"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo16">
+                        <div class="eachHour" id="eachHour16"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon16">
+                        <div class="eachTemp temperature" id="eachTemp16"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo17">
+                        <div class="eachHour" id="eachHour17"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon17">
+                        <div class="eachTemp temperature" id="eachTemp17"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo18">
+                        <div class="eachHour" id="eachHour18"> </div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon18">
+                        <div class="eachTemp temperature" id="eachTemp18"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo19">
+                        <div class="eachHour" id="eachHour19"></div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon19">
+                        <div class="eachTemp temperature" id="eachTemp19"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo20">
+                        <div class="eachHour" id="eachHour20"></div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon20">
+                        <div class="eachTemp temperature" id="eachTemp20"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo21">
+                        <div class="eachHour" id="eachHour21"></div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon21">
+                        <div class="eachTemp temperature" id="eachTemp21"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo22">
+                        <div class="eachHour" id="eachHour22"></div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon22">
+                        <div class="eachTemp temperature" id="eachTemp22"></div>
+                    </div>
+
+                    <div class="eachHourInfo" id="eachhourInfo23">
+                        <div class="eachHour" id="eachHour23"></div>
+                        <img src="" alt="" class="eachConditon" id="eachConditon23">
+                        <div class="eachTemp temperature" id="eachTemp23"></div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="weakweatherReports hideTemp">
+                <div class="weakday1">
+                    <div class="dayName" id="dayName0"></div>
+                    <img src="" alt="icon" class="weathercondIcon" id="weathercondIcon0">
+                    <div class="weakdayTemp temparature" id="weakdayTemp0"></div>
+                </div>
+                <div class="weakday2">
+                    <div class="dayName" id="dayName1"></div>
+                    <img src="" alt="icon" class="weathercondIcon" id="weathercondIcon1">
+                    <div class="weakdayTemp temparature" id="weakdayTemp1"></div>
+                </div>
+                <div class="weakday3">
+                    <div class="dayName" id="dayName2"></div>
+                    <img src="" alt="icon" class="weathercondIcon" id="weathercondIcon2">
+                    <div class="weakdayTemp temparature" id="weakdayTemp2"></div>
+                </div>
+                <div class="weakday4">
+                    <div class="dayName" id="dayName3"></div>
+                    <img src="" alt="icon" class="weathercondIcon" id="weathercondIcon3">
+                    <div class="weakdayTemp temparature" id="weakdayTemp3"></div>
+                </div>
+                <div class="weakday5">
+                    <div class="dayName" id="dayName4"></div>
+                    <img src="" alt="icon" class="weathercondIcon" id="weathercondIcon4">
+                    <div class="weakdayTemp temparature" id="weakdayTemp4"></div>
+                </div>
+                <div class="weakday6">
+                    <div class="dayName" id="dayName5"></div>
+                    <img src="" alt="icon" class="weathercondIcon" id="weathercondIcon5">
+                    <div class="weakdayTemp temparature" id="weakdayTemp5"></div>
+                </div>
+                <div class="weakday7">
+                    <div class="dayName" id="dayName6"></div>
+                    <img src="" alt="icon" class="weathercondIcon" id="weathercondIcon6">
+                    <div class="weakdayTemp temparature" id="weakdayTemp6"></div>
+                </div>
+            </div>
+            <h2 class="hightlightHeading">Today's Highlights</h2>
+            <div class="hightlightsCards">
+                <div class="uvIndexCard">
+                    <p class="hightLightCardName" id="hightLightCard1">UV Index</p>
+                    <p class="hightLightValue" id="hightLightValue1"></p>
+                    <p class="hightLightResult" id="hightLightResult1"></p>
+                </div>
+                <div class="windstatusCard">
+                    <p class="hightLightCardName" id="hightLightCard2">Windstatus</p>
+                    <p class="hightLightValue" id="hightLightValue2"></p>
+                    <p class="hightLightResult" id="hightLightResult2">km/h</p>
+                </div>
+                <div class="sunriseSunsetCard">
+                    <p class="hightLightCardName" id="hightLightCard3">SunriseSunset</p>
+                    <p class="hightLightValue" id="hightLightValue3"></p>
+                    <p class="hightLightResult" id="hightLightResult3"></p>
+                </div>
+                <div class="humidityCard">
+                    <p class="hightLightCardName" id="hightLightCard4">Humidity</p>
+                    <p class="hightLightValue" id="hightLightValue4"></p>
+                    <p class="hightLightResult" id="hightLightResult4"></p>
+                </div>
+                <div class="visibilityCard">
+                    <p class="hightLightCardName" id="hightLightCard5">Visibility</p>
+                    <p class="hightLightValue" id="hightLightValue5"></p>
+                    <p class="hightLightResult" id="hightLightResult5"></p>
+                </div>
+                <div class="airQualityCard">
+                    <p class="hightLightCardName" id="hightLightCard6">Air Quality</p>
+                    <p class="hightLightValue" id="hightLightValue6"></p>
+                    <p class="hightLightResult" id="hightLightResult6"></p>
+                </div>
+
+            </div>
+            <h4 class="footerContent">These Applictaion Was Done By @ <span class="creator">RAJAKESAVA</span>
+            </h4>
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
